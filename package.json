@@ -1,0 +1,15 @@
+{
+  "name": "tideline-showdown",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "sim": "node sim.js",
+    "build": "node -c server.js && node -c public/engine.js && node -c sim.js",
+    "lint": "node -c server.js && node -c public/engine.js && node -c sim.js"
+  },
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
+}
